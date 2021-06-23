@@ -32,7 +32,15 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.css-1vn39v9:hover {
+  -webkit-transform: translateY(-0.25rem);
+  -ms-transform: translateY(-0.25rem);
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 2px 4px rgb(46 41 51 / 8%), 0px 5px 10px rgb(71 63 79 / 16%);
 }
