@@ -98,9 +98,9 @@ const Footer = () => {
                         Contact Us
                     </div>
 
-                    <a href="#" class="my-3 block text-gray-500 text-sm font-medium duration-700">
+                    <p class="my-3 block text-gray-500 text-sm font-medium duration-700">
                     <span><FontAwesomeIcon icon={faCalendarAlt} /></span> GitHub
-                    </a>
+                    </p>
                     
                 </div>
             </div>

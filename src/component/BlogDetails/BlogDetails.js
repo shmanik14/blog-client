@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
 const BlogDetails = () => {
     const {id} = useParams();
     const [blog, setBlog] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:4000/blog/${id}`)
+        fetch(`https://desolate-meadow-15734.herokuapp.com/blog/${id}`)
         .then(res => res.json())
         .then(data => setBlog(data))
     }, [id])
 
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000/blogs`)
+        fetch(`https://desolate-meadow-15734.herokuapp.com/blogs`)
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, [])
@@ -42,6 +43,7 @@ const BlogDetails = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

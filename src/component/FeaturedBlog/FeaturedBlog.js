@@ -4,7 +4,7 @@ import Blog from '../Blog/Blog';
 const FeaturedBlog = () => {
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000/blogs`)
+        fetch(`https://desolate-meadow-15734.herokuapp.com/blogs`)
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, [])

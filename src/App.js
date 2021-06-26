@@ -4,6 +4,7 @@ import './App.css';
 import BlogDetails from './component/BlogDetails/BlogDetails';
 import AddBlog from './component/Dashboard/AddBlog/AddBlog';
 import Dashboard from './component/Dashboard/Dashboard';
+import ManageBlog from './component/Dashboard/ManageBlog/ManageBlog';
 import Home from './component/Home/Home';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/addBlog">
               <AddBlog />
+            </Route>
+            <Route path="/manageBlog">
+              <ManageBlog />
             </Route>
             <PrivateRoute>
               <Dashboard />
