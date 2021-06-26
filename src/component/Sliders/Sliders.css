@@ -113,6 +113,12 @@ h3.trending-title:after {
     padding-bottom: 10px;
     list-style: square;
     list-style-position: inside;
+    background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95% / 0px 1px no-repeat;
+    transition: background-size 0.35s cubic-bezier(0.48, 0.56, 0.67, 0.76) 0s;
+}
+
+.trending-post ul li:hover {
+    background-size: 100% 1px;
 }
 
 .trending-post ul li::marker {
