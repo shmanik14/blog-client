@@ -6,7 +6,6 @@ import AddBlog from './component/Dashboard/AddBlog/AddBlog';
 import Dashboard from './component/Dashboard/Dashboard';
 import ManageBlog from './component/Dashboard/ManageBlog/ManageBlog';
 import Home from './component/Home/Home';
-import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 
 export const userContext = createContext();
 
@@ -28,9 +27,9 @@ function App() {
             <Route path="/manageBlog">
               <ManageBlog />
             </Route>
-            <PrivateRoute>
+            <Route path="/dashboard">
               <Dashboard />
-            </PrivateRoute>
+            </Route>
         </Switch>
       </Router>
     </userContext.Provider>

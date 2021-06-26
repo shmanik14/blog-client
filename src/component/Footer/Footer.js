@@ -11,27 +11,7 @@ const Footer = () => {
                     <div class="text-xs uppercase text-gray-400 font-medium mb-6">
                         About Us
                     </div>             
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Installation
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Release Notes
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Upgrade Guide
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Using with Preprocessors
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Optimizing for Production
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Browser Support
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        IntelliSense
-                    </a>
+                    <p className="text-xs uppercase text-gray-400 font-medium mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima veritatis dicta praesentium doloribus quos sit ipsa, illum, tenetur recusandae quasi maxime et velit quo iusto.</p>
                 </div>
 
                
@@ -54,15 +34,6 @@ const Footer = () => {
                     <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                         Dark Mode
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Adding Base Styles
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Extracting Components
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Adding New Utilities
-                    </a>
                 </div>
 
                 <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
@@ -82,25 +53,15 @@ const Footer = () => {
                     <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                         Customizing Colors
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Customizing Spacing
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Configuring Variants
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Plugins
-                    </a>
                 </div>
 
                 <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <div class="text-xs uppercase text-gray-400 font-medium mb-6">
                         Contact Us
                     </div>
-
-                    <p class="my-3 block text-gray-500 text-sm font-medium duration-700">
-                    <span><FontAwesomeIcon icon={faCalendarAlt} /></span> GitHub
-                    </p>
+                    <p className="text-xs uppercase text-gray-400 font-medium mb-6"><span><FontAwesomeIcon icon={faCalendarAlt} /></span>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <p className="text-xs uppercase text-gray-400 font-medium mb-6"><span><FontAwesomeIcon icon={faCalendarAlt} /></span>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <p className="text-xs uppercase text-gray-400 font-medium mb-6"><span><FontAwesomeIcon icon={faCalendarAlt} /></span>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                     
                 </div>
             </div>
