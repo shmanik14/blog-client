@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Dashboard = () => {
     return (
         <div>
+            <Header></Header>
             <div className="container mx-auto">
                 <div className="grid grid-cols-4 gap-4">
                     <div>
@@ -17,6 +20,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

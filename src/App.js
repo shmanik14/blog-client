@@ -6,13 +6,15 @@ import AddBlog from './component/Dashboard/AddBlog/AddBlog';
 import Dashboard from './component/Dashboard/Dashboard';
 import ManageBlog from './component/Dashboard/ManageBlog/ManageBlog';
 import Home from './component/Home/Home';
+import Login from './component/Login/Login';
+import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 
 export const userContext = createContext();
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({});
+  const [user, setUser] = useState({});
   return (
-    <userContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <userContext.Provider value={[user, setUser]}>
       <Router>
         <Switch>
             <Route exact path="/">
@@ -21,15 +23,18 @@ function App() {
             <Route path="/blog/:id">
               <BlogDetails />
             </Route>
-            <Route path="/addBlog">
+            <Route path="/login">
+              <Login />
+            </Route>
+            <PrivateRoute path="/addBlog">
               <AddBlog />
-            </Route>
-            <Route path="/manageBlog">
+            </PrivateRoute>
+            <PrivateRoute path="/manageBlog">
               <ManageBlog />
-            </Route>
-            <Route path="/dashboard">
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard">
               <Dashboard />
-            </Route>
+            </PrivateRoute>
         </Switch>
       </Router>
     </userContext.Provider>
