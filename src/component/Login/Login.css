@@ -6,107 +6,11 @@
     border-radius: 15px;
     text-align: center;
 }
-.login-btn{
-    border: 1px solid #ebdfdf;
-    background-color: transparent;
-    padding: 5px 20px;
-    border-radius: 50px;
-    width: 100%;
-    margin-bottom: 20px;
-    position: relative;
-}
-button.login-btn span {
-    position: absolute;
-    left: 20px;
-}
-.form-card .form-control {
-    margin-bottom: 12px;
-}
-.login-heading{
-    font-weight: 700;
-    padding-bottom: 20px;
-    color: #ff5a3c;
-}
-.social-login h4 {
-    font-weight: 700;
-    color: #ff5a3c;
-}
-.submit-button{
-    background-color: #ff5a3c;
-    border: 1px soild #ff5a3c !important;
-    border-color: #ff5a3c !important;
-    padding: 8px 20px;
-    font-weight: 500;
-    width: 100%;
-    color: #fff;
-    margin-bottom: 15px;
-}
+
 @media (min-width: 320px) and (max-width: 767px) {
     .form-card {
         width: 100% !important;
         padding: 20px 30px;
         margin: 50px auto;
     }
-  }
-/*
-
-.form-field {
-    border: none;
-    background-color: rgb(190, 255, 190);
-    border-radius: 2px;
-    margin-top: 20px;
-    width: 50%;
-    height: 45px;
 }
-
-.savingPassword {
-    text-align: center;
-}
-
-.error {
-    color: red;
-}
-
-.submit-button {
-    font-size: 20px;
-    color: white;
-    background-color: green;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 2px 2px 5px gray;
-    margin-bottom: 20px;
-    width: 50%;
-    height: 45px;
-}
-
-.social-login {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.social-media-btn {
-    padding: 2px;
-    width: 200px;
-    box-shadow: 2px 2px 5px gray;
-    height: 55px;
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: white;
-}
-
-.social-media-icon {
-    margin-right: 30px;
-    margin-top: -10px;
-    margin-bottom: -5px;
-}
-
-@media (max-width: 760px) {
-    .logo {
-        width: 50%;
-        margin-bottom: 10px;
-    }
-    .form-field {
-        width: 100%;
-    }
-} */

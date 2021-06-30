@@ -7,7 +7,7 @@ import Footer from '../../Footer/Footer';
 import Header from '../../Header/Header';
 
 const AddBlog = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(userContext);
+    const [user, setUser] = useContext(userContext);
     const [imageURL, setImageURL] = useState(null);
     console.log(imageURL)
     const handleImageUpload = event => {

@@ -7,7 +7,7 @@ import './Category.css';
 const Category = () => {
     return (
         <div className="blog-category">
-            <div className="container mx-auto grid grid-cols-4 gap-4">
+            <div className="container mx-auto grid md:grid-cols-4 gap-4">
                 <div className="sin-category text-center">
                     <p><span><FontAwesomeIcon icon={faFileAlt} /></span></p>
                     <h3>Case Studies</h3>

@@ -15,7 +15,7 @@ const FeaturedBlog = () => {
                     <div className="px-3">
                         <h2 className="section-heading text-4xl pb-3 mb-3">Featured Blog</h2>
                     </div>
-                    <div className="grid grid-cols-3 gap-1">
+                    <div className="grid md:grid-cols-3 gap-1">
                     {
                         blogs.map(blog => <Blog key={blog._id} blog={blog}></Blog>)  
                     }

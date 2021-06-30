@@ -27,8 +27,8 @@ const BlogDetails = () => {
         <div>
             <Header />
             <div className="container mx-auto">
-                <div className="mt-20 mb-20 grid grid-cols-3 gap-5">
-                    <div class="md:col-span-2">
+                <div className="mt-20 mb-20 grid xs:grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="px-3 md:col-span-2">
                         <img className="w-full pb-10" src={blog.image} alt=""/>
                         <h1 className="pb-6 text-xl font-medium leading-6 tracking-wide text-black-600">{blog.title}</h1>
                         <p>{blog.description}</p>

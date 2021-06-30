@@ -5,6 +5,8 @@ import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory, useLocation } from "react-router";
 import { userContext } from "../../App";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import firebaseConfig from "./firebase.config";
 import "./Login.css";
 
@@ -17,7 +19,6 @@ if (!firebase.apps.length) {
 
 const Login = () => {
     const [user, setUser] = useContext(userContext);
-    const googleProvider = new firebase.auth.GoogleAuthProvider();
 
     let history = useHistory();
     let location = useLocation();
@@ -114,15 +115,6 @@ const Login = () => {
             : handleLogIn(data.email, data.password);
     };
 
-    // Toggling sign up and sign in
-    const toggleForm = (e) => {
-        e.preventDefault();
-        const newUser = { ...user };
-        newUser.isNewUser = !newUser.isNewUser;
-        newUser.error = "";
-        setUser(newUser);
-    };
-
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
 
@@ -142,22 +134,23 @@ const Login = () => {
     };
     return (
         <section>
+            <Header />
         <div className="form-card">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <h3 className="login-heading">Log In</h3>
+                <h3 className="pb-6 text-4xl text-blue-800 font-bold">Log In</h3>
                 {user.isNewUser && (
-                    <input type="text" name="name" className="form-control"
+                    <input type="text" name="name" className="block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
                         {...register("name", { required: true })} placeholder="Your Name"
                     />
                 )}
-                <input type="email" name="email" className="form-control" placeholder="Your Email"
+                <input type="email" name="email" className="mb-3 block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Your Email"
                     {...register("email", { required: true, pattern: /\S+@\S+\.\S+/})}           
                 />
                 {errors && (<span className="error">
                         {errors.email.type === "required" ? "Email is required" : "Your Email pattern is not correct"}
                     </span>
                 )}
-                <input type="password" name="password" className="form-control"
+                <input type="password" name="password" className="mb-3 block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
                     {...register("password", {required: true})}
                     placeholder="Your Password"
                     onBlur={handleBlur}
@@ -186,10 +179,11 @@ const Login = () => {
                 {user.isNewUser ? (
                     <input type="submit" value="Create" className="submit-button btn"/>
                 ) : (
-                    <input type="submit" value="Log In" className="submit-button btn"/>
+                    <input type="submit" value="Log In" className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"/>
                 )}
             </form>
         </div>
+        <Footer />
         </section>
     );
 };

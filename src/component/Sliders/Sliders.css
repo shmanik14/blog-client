@@ -124,3 +124,24 @@ h3.trending-title:after {
 .trending-post ul li::marker {
     color: #4f46e5;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .slider-blog-content h2 {
+        font-size: 1.25rem;
+        color: #fff;
+    }
+
+    .slick-next {
+        right: 75%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 35px;
+    }
+
+    p.author {
+        color: #fff;
+        padding: 7px 0 0 0;
+    }
+}

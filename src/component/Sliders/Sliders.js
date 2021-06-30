@@ -28,7 +28,7 @@ const Sliders = () => {
         history.push(`/blog/${id}`);
     }
     return (
-        <div className="container mx-auto grid grid-cols-3 gap-4 slider">
+        <div className="container mx-auto xs:grid-cols-1 md:grid grid-cols-3 gap-4 slider">
             <div class="md:col-span-2 slider-blog">
                 <Slider {...settings}>
                 {

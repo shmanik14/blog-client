@@ -54,6 +54,7 @@ const Header = () =>  {
                 <Link className="text-base font-medium text-gray-500 hover:text-gray-900" to="/">Home</Link>
                 <Link className="text-base font-medium text-gray-500 hover:text-gray-900" to="/about">About</Link>
                 <Link className="text-base font-medium text-gray-500 hover:text-gray-900" to="/contact">Contact</Link>
+                <Link className="text-base font-medium text-gray-500 hover:text-gray-900" to="/dashboard">Dashboard</Link>
               </Popover.Group>
               
               
@@ -102,21 +103,13 @@ const Header = () =>  {
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                     <Link className="text-base font-medium text-gray-900 hover:text-gray-700" to="/">Home</Link>
                     <Link className="text-base font-medium text-gray-900 hover:text-gray-700" to="/about">About</Link>
-                    <Link className="text-base font-medium text-gray-900 hover:text-gray-700" to="/contact">Contact</Link>                   
+                    <Link className="text-base font-medium text-gray-900 hover:text-gray-700" to="/contact">Contact</Link>   
+                    <Link className="text-base font-medium text-gray-500 hover:text-gray-900" to="/dashboard">Dashboard</Link>                
                   </div>
                   <div>
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                    >
-                      Sign up
-                    </a>
-                    <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      Existing customer?{' '}
-                      <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                        Sign in
-                      </a>
-                    </p>
+                  {
+                  user.email ? <Link className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700" onClick={signOut}>Log Out</Link> : <Link className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700" to="/login">Login</Link>
+                  }
                   </div>
                 </div>
               </div>
