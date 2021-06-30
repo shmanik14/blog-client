@@ -2,7 +2,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import React, { useContext, useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form/dist/index.esm.js";
 import { useHistory, useLocation } from "react-router";
 import { userContext } from "../../App";
 import Footer from "../Footer/Footer";

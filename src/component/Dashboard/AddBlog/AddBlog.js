@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React, { useContext, useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form/dist/index.esm.js';
 import { Link } from 'react-router-dom';
 import { userContext } from '../../../App';
 import Footer from '../../Footer/Footer';
 import Header from '../../Header/Header';
-
+import './AddBlog.css';
 const AddBlog = () => {
     const [user, setUser] = useContext(userContext);
     const [imageURL, setImageURL] = useState(null);
@@ -48,14 +48,14 @@ const AddBlog = () => {
         <div>
             <Header />
             <div className="mt-10 mb-10 container mx-auto">
-            <div className="grid grid-cols-4 gap-4">
-                <div>
+            <div className="grid xs:grid-cols-1 md:grid-cols-4 gap-4">
+                <div className="sidebar">
                     <ul>
                         <Link to="/addBlog">Add Blog</Link>
                         <Link to="/manageBlog">Manage Blog</Link>
                     </ul>
                 </div>
-                <div className="md:col-span-3">
+                <div className="px-5 md:col-span-3">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <label className="pb-3 block text-sm font-medium text-gray-700" htmlFor="title">Blog Title</label>
                             <input className="block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" name="title" placeholder="Blog Title" {...register("title")} />

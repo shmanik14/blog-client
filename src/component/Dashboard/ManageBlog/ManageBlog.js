@@ -33,8 +33,8 @@ const ManageBlog = () => {
         <div>
             <Header />
             <div className="mt-10 mb-10 container mx-auto">
-            <div className="grid grid-cols-4 gap-4">
-                <div>
+            <div className="grid xs:grid-cols-1 md:grid-cols-4 gap-4">
+                <div className="sidebar">
                     <ul>
                         <Link to="/addBlog">Add Blog</Link>
                         <Link to="/manageBlog">Manage Blog</Link>
@@ -47,7 +47,7 @@ const ManageBlog = () => {
                                 <tr className="bg-gray-50 border-b">
                                     <th className="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
                                         <div className="flex items-center justify-center">
-                                            ID
+                                            Index
                                         </div>
                                     </th>
                                     <th className="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
@@ -64,9 +64,9 @@ const ManageBlog = () => {
                             </thead>
                             <tbody>
                                 {
-                                    manageServices.map(ms => 
+                                    manageServices.map((ms, index) => 
                                 <tr className="bg-gray-100 text-center border-b text-sm text-gray-600">
-                                    <td className="p-2 border-r">1</td>
+                                    <td className="p-2 border-r">{index}</td>
                                     <td className="p-2 border-r">{ms.title}</td>
                                     <td><p onClick={() => deleteBlog(ms._id)} className="cursor-pointer bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Delete</p></td>
                                 
