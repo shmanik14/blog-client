@@ -33,7 +33,7 @@ const Sliders = () => {
                 <Slider {...settings}>
                 {
                     blogs.slice(0, 3).map(blog =>
-                    <div className="sin-slider-blog">
+                    <div onClick={() => handleBook(blog._id)} className="sin-slider-blog cursor-pointer">
                         <div className="slider-blog-img">                   
                             <img src={blog.image} alt="Blog Avatar"/>
                         </div>

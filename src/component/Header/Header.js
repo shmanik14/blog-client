@@ -29,7 +29,7 @@ const Header = () =>  {
       });
   };
   return (
-    <Popover className="relative bg-white">
+    <Popover className="z-50 relative bg-white">
       {({ open }) => (
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
