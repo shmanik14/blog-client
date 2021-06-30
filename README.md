@@ -12,5 +12,5 @@ Node JS, Express.js, Heroku, Mongodb.
 ### Live Link
 [Daily Dose Blog](https://daily-dose-blog.web.app/).
 
-###Server Side Code
+### Server Side Code
 [Server Side Code Link](https://github.com/shmanik14/blog-with-react-server).
