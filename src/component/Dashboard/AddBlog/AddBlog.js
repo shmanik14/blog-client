@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useContext, useState } from 'react';
-import { useForm } from 'react-hook-form/dist/index.esm.js';
+import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { userContext } from '../../../App';
 import Footer from '../../Footer/Footer';
